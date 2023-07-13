@@ -1,0 +1,8 @@
+selenium
+pygame
+pytube
+PySimpleGUI
+threading
+warnings
+logging
+subprocess
