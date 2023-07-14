@@ -60,7 +60,7 @@ def download(url):
         os.remove('output.wav')
     except:
         pass
-    yt = YouTube(url)
+    yt = YouTube(url, use_oauth=True, allow_oauth_cache=True)
     video = yt.streams.filter(only_audio=True).first()
     out_file = video.download(output_path="./")
     new_file = "output" + '.mp3'
